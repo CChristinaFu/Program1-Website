@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Program1 Website.loader.js";
+      var loaderUrl = buildUrl + "/Program 1 Website.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Program1 Website.data",
-        frameworkUrl: buildUrl + "/Program1 Website.framework.js",
-        codeUrl: buildUrl + "/Program1 Website.wasm",
+        dataUrl: buildUrl + "/Program 1 Website.data",
+        frameworkUrl: buildUrl + "/Program 1 Website.framework.js",
+        codeUrl: buildUrl + "/Program 1 Website.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "STEMSisters Program 1",
@@ -83,13 +83,11 @@
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
         container.className = "unity-mobile";
+        canvas.className = "unity-mobile";
 
         // To lower canvas resolution on mobile devices to gain some
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
-
-        canvas.style.width = window.innerWidth + 'px';
-        canvas.style.height = window.innerHeight + 'px';
 
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
